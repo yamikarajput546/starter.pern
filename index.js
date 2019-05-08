@@ -1,6 +1,7 @@
 const path = require("path")
 const express = require("express");
 const session = require("express-session");
+
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const passport = require("passport");
@@ -15,6 +16,7 @@ const router = require("./routes");
 
 dotenv.config();
 
+// SERVER
 const app = express();
 
 app.use(bodyParser.json());

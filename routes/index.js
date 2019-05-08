@@ -1,7 +1,8 @@
-const express = require('express');
+const Router = require("express-promise-router");
+
 const passport = require('passport');
 
-const router = express.Router()
+const router = new Router();
 
 router.get("/secret", (req, res) => {
   res.send("You found my secret!")
